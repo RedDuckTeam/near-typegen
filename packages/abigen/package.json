@@ -23,7 +23,7 @@
     "neargenjs-abigen": "./dist/main.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
+    "test": "cd ../.. && jest packages/abigen",
     "start": "ts-node ./src/main.ts",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",

@@ -21,7 +21,7 @@
     "dist/**/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
+    "test": "cd ../.. && jest packages/utils",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint . --ext .ts",

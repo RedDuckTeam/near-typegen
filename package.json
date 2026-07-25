@@ -9,22 +9,24 @@
     ]
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "build": "npm run build:utils && npm run build:core && npm run build:abigen && npm run build:typegen",
     "format": "run-s format:*",
     "lint": "run-s lint:*",
-    "build:abigen" : "cd packages/abigen && npm run build",
-    "format:abigen" : "cd packages/abigen && npm run format",
-    "lint:abigen" : "cd packages/abigen && npm run lint",
-    "build:typegen" : "cd packages/typegen && npm run build",
-    "format:typegen" : "cd packages/typegen && npm run format",
-    "lint:typegen" : "cd packages/typegen && npm run lint",
-    "build:core" : "cd packages/core && npm run build",
-    "format:core" : "cd packages/core && npm run format",
-    "lint:core" : "cd packages/core && npm run lint",
-    "build:utils" : "cd packages/utils && npm run build",
-    "format:utils" : "cd packages/utils && npm run format",
-    "lint:utils" : "cd packages/utils && npm run lint"
+    "build:abigen": "cd packages/abigen && npm run build",
+    "format:abigen": "cd packages/abigen && npm run format",
+    "lint:abigen": "cd packages/abigen && npm run lint",
+    "build:typegen": "cd packages/typegen && npm run build",
+    "format:typegen": "cd packages/typegen && npm run format",
+    "lint:typegen": "cd packages/typegen && npm run lint",
+    "build:core": "cd packages/core && npm run build",
+    "format:core": "cd packages/core && npm run format",
+    "lint:core": "cd packages/core && npm run lint",
+    "build:utils": "cd packages/utils && npm run build",
+    "format:utils": "cd packages/utils && npm run format",
+    "lint:utils": "cd packages/utils && npm run lint"
   },
   "repository": {
     "type": "git",
@@ -37,14 +39,17 @@
   },
   "homepage": "https://github.com/RedDuck-Software/near-typegen#readme",
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/node": "^18.11.9",
     "@types/prettier": "^2.7.1",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
     "eslint": "^8.27.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.8.4",
+    "jest": "^29.7.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "ts-jest": "^29.4.12",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
   }
 }
