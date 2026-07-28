@@ -13,15 +13,7 @@
   <b>Typed NEAR contracts, end to end — from your TypeScript contract to a fully typed client.</b>
 </p>
 
-<p align="center">
-  <a href="https://github.com/RedDuck-Software/near-typegen/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/RedDuck-Software/near-typegen/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://www.npmjs.com/package/@neargen-js/typegen"><img alt="npm" src="https://img.shields.io/npm/v/@neargen-js/typegen?label=%40neargen-js%2Ftypegen"></a>
-  <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-</p>
-
 ---
-
-## ✨ What is this?
 
 Writing a NEAR frontend usually means calling contract methods by string name, passing untyped
 argument objects and hoping the response looks like you expect. `neargen-js` removes the guesswork:
@@ -34,7 +26,20 @@ contract.ts  ──abigen──▶  HelloNear.abi.json  ──typegen──▶  
 2. **typegen** turns that ABI into a TypeScript class with real method names, argument types and return types.
 3. You call the contract like a normal object — autocomplete and type errors included.
 
-## 📦 Packages
+## Built with
+
+| Area | Technology |
+| --- | --- |
+| Monorepo | npm workspaces |
+| Language | TypeScript |
+| ABI extraction | `ts-morph`, `near-sdk-js`, `commander` |
+| Type generation | `near-api-js`, `commander` |
+| Runtime | `@near-wallet-selector/core`, `near-api-js` |
+| Testing | Jest, ts-jest |
+| Tooling | ESLint, Prettier |
+| CI | GitHub Actions |
+
+## Packages
 
 | Package                                              | Description                                                            | Version                                                                                                           |
 | ---------------------------------------------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -47,7 +52,7 @@ contract.ts  ──abigen──▶  HelloNear.abi.json  ──typegen──▶  
 > [`near-abigen-js`](https://github.com/RedDuck-Software/near-abigen-js) and
 > [`typechain-near`](https://github.com/RedDuck-Software/typechain-near). Both now live here.
 
-## 🚀 Quick start
+## Quick start
 
 Install the generators where your contract lives, and `core` where your app runs:
 
@@ -103,7 +108,7 @@ Wrong method name, missing argument or mistyped value? TypeScript catches it bef
 
 A complete runnable setup (contract + CRA frontend) lives in [examples/ts-cra](./examples/ts-cra).
 
-## 🛠️ CLI reference
+## CLI reference
 
 ### `neargenjs-abigen`
 
@@ -122,7 +127,7 @@ A complete runnable setup (contract + CRA frontend) lives in [examples/ts-cra](.
 > **Frontend note:** `typegen` needs `fs`, so keep it in `devDependencies` and ship
 > `@neargen-js/core` as a regular dependency — that's the only package the generated code imports at runtime.
 
-## 📐 ABI format
+## ABI format
 
 ```ts
 {
@@ -144,13 +149,13 @@ and will produce an incorrect ABI:
 
 ```ts
 @call({})
-public some_method({ someValue }: { someValue: string }) {} // ✅
+public some_method({ someValue }: { someValue: string }) {} // ok
 
 @call({})
-public some_method(someValue: string) {}                    // ❌
+public some_method(someValue: string) {}                    // wrong
 ```
 
-## 🧑‍💻 Development
+## Development
 
 This is an npm-workspaces monorepo (Node 18+).
 
@@ -173,12 +178,11 @@ npm run format
 
 To work on a single package, use the scoped scripts — e.g. `npm run build:typegen`, `npm run lint:core`.
 
-## 🤝 Contributing
+## Contributing
 
 Issues and pull requests are welcome — open one at
 [RedDuck-Software/near-typegen](https://github.com/RedDuck-Software/near-typegen/issues).
 Please make sure `npm run build`, `npm run lint` and `npm test` pass before submitting.
 
-## 📄 License
-
-[MIT](./LICENSE) © RedDuck Software
+## License
+[MIT](LICENSE) © RedDuck Limited
