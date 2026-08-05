@@ -1,6 +1,6 @@
 {
   "name": "@neargen-js/abigen",
-  "author": "RedDuck Software",
+  "author": "RedDuck Limited",
   "version": "0.0.17-dev",
   "types": "dist/index.d.ts",
   "description": "Abi generator package for NEAR contracts written in TypeScript",
@@ -15,7 +15,7 @@
     "types"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/RedDuck-Software/near-typegen/tree/main/packages/abigen",
+  "homepage": "https://github.com/RedDuckTeam/near-typegen/tree/main/packages/abigen",
   "files": [
     "dist/**/*"
   ],
@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RedDuck-Software/near-typegen.git"
+    "url": "git+https://github.com/RedDuckTeam/near-typegen.git"
   }
 }

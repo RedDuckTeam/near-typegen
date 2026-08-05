@@ -30,14 +30,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RedDuck-Software/near-typegen.git"
+    "url": "git+https://github.com/RedDuckTeam/near-typegen.git"
   },
-  "author": "RedDuck Software",
+  "author": "RedDuck Limited",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RedDuck-Software/near-typegen/issues"
+    "url": "https://github.com/RedDuckTeam/near-typegen/issues"
   },
-  "homepage": "https://github.com/RedDuck-Software/near-typegen#readme",
+  "homepage": "https://github.com/RedDuckTeam/near-typegen#readme",
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^18.11.9",

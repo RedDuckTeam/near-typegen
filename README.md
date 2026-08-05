@@ -49,8 +49,8 @@ contract.ts  ──abigen──▶  HelloNear.abi.json  ──typegen──▶  
 | [`@neargen-js/utils`](./packages/utils/README.md)     | Shared helpers for `abigen` and `typegen`                              | ![npm](https://img.shields.io/npm/v/@neargen-js/utils?label=%20)                                                    |
 
 > `abigen` and `typegen` were previously published as
-> [`near-abigen-js`](https://github.com/RedDuck-Software/near-abigen-js) and
-> [`typechain-near`](https://github.com/RedDuck-Software/typechain-near). Both now live here.
+> [`near-abigen-js`](https://github.com/RedDuckTeam/near-abigen-js) and
+> [`typechain-near`](https://github.com/RedDuckTeam/typechain-near). Both now live here.
 
 ## Quick start
 
@@ -181,7 +181,7 @@ To work on a single package, use the scoped scripts — e.g. `npm run build:type
 ## Contributing
 
 Issues and pull requests are welcome — open one at
-[RedDuck-Software/near-typegen](https://github.com/RedDuck-Software/near-typegen/issues).
+[RedDuckTeam/near-typegen](https://github.com/RedDuckTeam/near-typegen/issues).
 Please make sure `npm run build`, `npm run lint` and `npm test` pass before submitting.
 
 ## License

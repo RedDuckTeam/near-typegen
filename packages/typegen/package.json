@@ -1,6 +1,6 @@
 {
   "name": "@neargen-js/typegen",
-  "author": "RedDuck Software",
+  "author": "RedDuck Limited",
   "version": "0.0.12-dev",
   "types": "dist/index.d.ts",
   "description": "TypeScript Type definitions generator package for NEAR smart contracts",
@@ -17,10 +17,10 @@
     "typegen"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/RedDuck-Software/near-typegen/tree/main/packages/typegen",
+  "homepage": "https://github.com/RedDuckTeam/near-typegen/tree/main/packages/typegen",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RedDuck-Software/near-typegen.git"
+    "url": "git+https://github.com/RedDuckTeam/near-typegen.git"
   },
   "files": [
     "dist/**/*"
