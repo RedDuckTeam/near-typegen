@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://redduck.io">
+  <a href="https://redduck.io/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=near-typegen">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset=".github/assets/redduck-logo-dark.svg">
       <img src=".github/assets/redduck-logo.svg" alt="RedDuck" width="240">
